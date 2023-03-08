@@ -9,7 +9,3 @@ for(let video of videos) {
     }
   })
 }
-
-if(window.scrollY > 0) {
-  window.scrollY(200);
-}

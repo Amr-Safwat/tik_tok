@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+html {
+  scroll-snap-type: y mandatory;
+}
 body {
   background-color: black;
   height: 100vh;
@@ -25,12 +28,15 @@ body {
 .app-video {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+
 }
 .video {
   position: relative;
   height: 100%;
   width: 100%;
   background-color: white;
+  scroll-snap-align: start;
 }
 video {
   position: relative;
