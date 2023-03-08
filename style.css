@@ -21,6 +21,12 @@ body {
   max-width: 350px;
   border-radius: 6px;
 }
+@media (max-width: 767px) {
+.app-video {
+  height: 665px;
+  border-radius: 0;
+}
+}
 .app-video::-webkit-scrollbar {
   display: none;
 }
