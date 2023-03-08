@@ -19,7 +19,6 @@ body {
   overflow: scroll;
   width: 100%;
   max-width: 350px;
-  margin-top: 20px;
   border-radius: 6px;
 }
 .app-video::-webkit-scrollbar {
