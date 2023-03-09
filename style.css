@@ -60,17 +60,16 @@ body {
   opacity: .5;
   animation: display .1s ease-in;
 }
+.heart {
+  color: #fb8580;
+  font-size: 125px;
+}
 @keyframes display{
   from {
     transform: scale(0);
   }to {
     transform: scale(1);
   }
-}
-.show-icon {
-  display: inline;
-  transition: 3s;
-
 }
 video {
   position: relative;

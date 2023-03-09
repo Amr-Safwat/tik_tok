@@ -23,6 +23,10 @@ for(let video of videos) {
 
 for(let i = 0;i< icons.length;i++) {
   icons[i].onclick = ()=>{
+    icon[2].style.display = 'flex';
+    setTimeout(()=> {
+      icon[2].style.display = 'none';
+    },800);
     pAll[i].innerHTML++;
   }
 }
