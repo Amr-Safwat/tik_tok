@@ -47,16 +47,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80px;
-  height: 80px;
-  margin-left: -40px;
-  margin-top: -40px;
-  color: rgb(128 128 128 / 60%);
-  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  color: grey;
+  font-size: 110px;
   z-index: 10;
   display: none;
   justify-content: center;
   align-items: center;
+  opacity: .5;
   animation: display .1s ease-in;
 }
 @keyframes display{
@@ -80,7 +81,7 @@ video {
 .video-sidebar {
   position: absolute;
   top: 45%;
-  right: 10px;
+  right: 25px;
 }
 .video-icon {
   text-align: center;
@@ -129,7 +130,7 @@ video {
   margin-bottom: 20px;
 }
 .img-marq marquee {
-  margin-left: 35px;
+  margin-left: 40px;
   margin-top: 20px;
   width: 73%;
 }
