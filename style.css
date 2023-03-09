@@ -18,12 +18,13 @@ body {
   background-color: white;
   overflow: scroll;
   width: 100%;
-  max-width: 100%;
+  max-width: 350px;
   border-radius: 6px;
 }
 @media (max-width: 767px) {
 .app-video {
   height: 665px;
+  max-width: 100%;
   border-radius: 0;
 }
 }
@@ -34,7 +35,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-snap-type: y mandatory;
-
 }
 .video {
   position: relative;
@@ -42,6 +42,34 @@ body {
   width: 100%;
   background-color: white;
   scroll-snap-align: start;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  margin-right: -40px;
+  color: rgb(128 128 128 / 60%);
+  font-size: 80px;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: display .1s ease-in;
+}
+@keyframes display{
+  from {
+    transform: scale(0);
+  }to {
+    transform: scale(1);
+  }
+}
+.show-icon {
+  display: inline;
+  transition: 3s;
+
 }
 video {
   position: relative;
