@@ -1,20 +1,31 @@
 let videos = document.querySelectorAll('video');
-let icons = document.querySelectorAll('.icon');
+let icon = document.querySelectorAll('.icon');
+let icons = document.getElementsByClassName('like');
+let pAll = document.querySelectorAll('.like + p');
 
 for(let video of videos) {
   video.addEventListener('click',()=>{
     if(video.paused) {
       video.play();
-      icons[0].style.display = 'flex';
+      icon[0].style.display = 'flex';
       setTimeout(()=> {
-        icons[0].style.display = 'none';
+        icon[0].style.display = 'none';
       },600);
     }else {
       video.pause();
-      icons[1].style.display = 'flex';
+      icon[1].style.display = 'flex';
       setTimeout(()=> {
-        icons[1].style.display = 'none';
+        icon[1].style.display = 'none';
       },600);
     }
   })
 }
+
+for(let i = 0;i< icons.length;i++) {
+  icons[i].onclick = ()=>{
+    pAll[i].innerHTML++;
+  }
+}
+
+
+// console.log(pAll);
