@@ -61,8 +61,8 @@ body {
   animation: display .1s ease-in;
 }
 .heart {
-  color: #ed716c;
-  font-size: 125px;
+  color: #ea4943;
+  font-size: 135px;
   opacity: .8;
   animation: liked .3s ease-in;
 }
@@ -141,8 +141,20 @@ video {
   display: flex;
   align-items: center;
 }
+.user {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #eee;
+  padding: 2px;
+}
 .footer-text h3 {
-  margin-bottom: 20px;
 }
 .img-marq marquee {
   margin-left: 40px;
