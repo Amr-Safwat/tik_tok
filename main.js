@@ -1,7 +1,9 @@
 let videos = document.querySelectorAll('video');
 let icon = document.querySelectorAll('.icon');
-let icons = document.getElementsByClassName('like');
+let likes = document.getElementsByClassName('like');
+let comments = document.getElementsByClassName('comment');
 let pAll = document.querySelectorAll('.like + p');
+let commentsList = document.querySelectorAll('.comments');
 
 for(let video of videos) {
   video.addEventListener('click',()=>{
@@ -21,8 +23,16 @@ for(let video of videos) {
   })
 }
 
-for(let i = 0;i< icons.length;i++) {
-  icons[i].onclick = ()=>{
+for(let i = 0;i< comments.length;i++) {
+  comments[i].onclick = ()=>{
+    commentsList[i].style.display = 'block';
+  }
+  videos[i].onclick = ()=>{
+    commentsList[i].style.display = 'none';
+  }
+}
+for(let i = 0;i< comments.length;i++) {
+  likes[i].onclick = ()=>{
     icon[2].style.display = 'flex';
     setTimeout(()=> {
       icon[2].style.display = 'none';
@@ -32,4 +42,4 @@ for(let i = 0;i< icons.length;i++) {
 }
 
 
-// console.log(pAll);
+// console.log(icon);

@@ -161,3 +161,46 @@ video {
   margin-top: 20px;
   width: 73%;
 }
+.comments {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background-color: white;
+  border-radius: 10px;
+  display: none;
+}
+.comments h3 {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.comments h3 span {
+  color: gray;
+}
+.comments .write-comment {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  background-color: #ddd;
+  z-index: 100;
+}
+.comments .write-comment input {
+  flex: 1;
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.comments .write-comment button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eee;
+  margin: 0 10px;
+}
