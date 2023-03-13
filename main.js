@@ -24,14 +24,6 @@ for(let video of videos) {
 }
 
 for(let i = 0;i< comments.length;i++) {
-  comments[i].onclick = ()=>{
-    commentsList[i].style.display = 'block';
-  }
-  videos[i].onclick = ()=>{
-    commentsList[i].style.display = 'none';
-  }
-}
-for(let i = 0;i< comments.length;i++) {
   likes[i].onclick = ()=>{
     icon[2].style.display = 'flex';
     setTimeout(()=> {
@@ -41,5 +33,12 @@ for(let i = 0;i< comments.length;i++) {
   }
 }
 
-
+for(let i = 0;i< comments.length;i++) {
+  comments[i].onclick = ()=>{
+    commentsList[i].style.bottom = '0';
+  }
+  videos[i].onclick = ()=>{
+    commentsList[i].style.bottom = '-60%';
+  }
+}
 // console.log(icon);
