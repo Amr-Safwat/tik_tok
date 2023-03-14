@@ -174,6 +174,34 @@ video {
   overflow: hidden;
   transition: .3s;
 }
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+.comments ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.comments ul li img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.comments ul li .info {
+  flex: 1;
+}
+.comments ul li h4 {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.comments ul li p {
+  color: rgb(62, 59, 59);
+}
+.comments ul li span {
+  color: #aaa;
+}
 .comments h3 {
   text-align: center;
   padding: 5px 0;
