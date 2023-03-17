@@ -96,15 +96,15 @@ video {
 }
 .video-sidebar {
   position: absolute;
-  top: 45%;
+  top: 48%;
   right: 25px;
 }
 .video-icon {
   text-align: center;
 }
-.video-icon img {
-  width: 30px;
+.video-icon i {
   cursor: pointer;
+  font-size: 22px;
 }
 .video-icon p {
   margin-bottom: 20px;
@@ -204,9 +204,9 @@ video {
 }
 .comments h3 {
   text-align: center;
-  padding: 5px 0;
+  padding: 8px 0;
   font-size: 16px;
-  background-color: #eee;
+  background-color: white;
 }
 .comments h3 span {
   color: gray;
@@ -223,14 +223,14 @@ video {
 .comments .write-comment input {
   flex: 1;
   margin-left: 10px;
-  padding: 10px;
+  padding: 13px;
   border: none;
   outline: none;
   border-radius: 20px;
 }
 .comments .write-comment button {
-  width: 35px;
-  height: 35px;
+  width: 41px;
+  height: 41px;
   border: none;
   border-radius: 50%;
   background-color: #ddd;
