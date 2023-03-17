@@ -9,6 +9,7 @@ let commentsList = document.querySelectorAll('.comments-list');
 let addCom = document.querySelectorAll('.comments button');
 let input = document.querySelectorAll('.comments input');
 let spans = document.querySelectorAll('.comments > h3 span');
+let layer = document.querySelectorAll('.layer');
 
 for (let video of videos) {
 	video.addEventListener('click', () => {
@@ -48,19 +49,14 @@ let msgTime = new Date();
 for (let i = 0; i < commentsI.length; i++) {
 	commentsI[i].onclick = () => {
 		comments[i].style.bottom = '0';
+		layer[i].style.height = '100%';
 	};
-	videos[i].onclick = () => {
+	layer[i].onclick = () => {
 		comments[i].style.bottom = '-60%';
+		layer[i].style.height = '0';
 	};
 }
-for (let i = 0; i < commentsI.length; i++) {
-	commentsI[i].onclick = () => {
-		comments[i].style.bottom = '0';
-	};
-	videos[i].onclick = () => {
-		comments[i].style.bottom = '-60%';
-	};
-}
+
 for (let i = 0; i < addCom.length; i++) {
 	addCom[i].onclick = () => {
 		let li = document.createElement('li');
