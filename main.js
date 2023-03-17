@@ -30,7 +30,7 @@ for (let video of videos) {
 
 for (let i = 0; i < likes.length; i++) {
 	likes[i].onclick = () => {
-		if (pAll[i].innerHTML !== '1') {
+		if (likes[i].style.color !== 'red') {
 			icon[2].style.display = 'flex';
 			likes[i].style.color = 'red';
 			setTimeout(() => {
