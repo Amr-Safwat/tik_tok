@@ -6,6 +6,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 body {
+  font-family: 'Cairo', sans-serif;
   background-color: black;
   height: 100vh;
   display: grid;
@@ -173,11 +174,15 @@ video {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: .3s;
 }
 .comments ul {
   list-style-type: none;
   padding: 0;
+  flex: 1;
+  overflow: auto;
 }
 .comments ul li {
   display: flex;
@@ -202,6 +207,8 @@ video {
 }
 .comments ul li span {
   color: #aaa;
+  font-size: 12px;
+  margin-bottom: 18px;
 }
 .comments h3 {
   text-align: center;
@@ -213,8 +220,6 @@ video {
   color: gray;
 }
 .comments .write-comment {
-  position: absolute;
-  bottom: 0;
   padding: 10px;
   width: 100%;
   display: flex;

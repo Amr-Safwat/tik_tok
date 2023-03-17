@@ -73,7 +73,7 @@ for (let i = 0; i < addCom.length; i++) {
 		div.className = 'info';
 		h4.innerText = 'Amr Safwat';
 		img.src = 'icons/Amr.png';
-		span.innerText = `${msgTime.getDate()}/${msgTime.getMonth()}/${msgTime.getFullYear()}`;
+		span.innerText = `${msgTime.getDate()}-${msgTime.getMonth()}-${msgTime.getFullYear()}`;
 		p.append(text);
 		commentsList[i].appendChild(li);
 		div.appendChild(h4);
