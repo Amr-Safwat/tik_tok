@@ -205,6 +205,9 @@ video {
 }
 .comments ul li .info {
   flex: 1;
+  background-color: #ddd;
+  padding: 8px 10px;
+  border-radius: 15px;
 }
 .comments ul li h4 {
   margin-bottom: 4px;
@@ -215,8 +218,8 @@ video {
 }
 .comments ul li span {
   color: #aaa;
-  font-size: 12px;
-  margin-bottom: 18px;
+  font-size: 10px;
+  margin: 30px 5px 0 10px;
 }
 .comments h3 {
   text-align: center;

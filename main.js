@@ -18,13 +18,13 @@ for (let video of videos) {
 			icon[0].style.display = 'flex';
 			setTimeout(() => {
 				icon[0].style.display = 'none';
-			}, 600);
+			}, 500);
 		} else {
 			video.pause();
 			icon[1].style.display = 'flex';
 			setTimeout(() => {
 				icon[1].style.display = 'none';
-			}, 600);
+			}, 500);
 		}
 	});
 }
